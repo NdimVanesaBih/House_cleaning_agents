@@ -1,0 +1,678 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.background-image {
+    background-image: url('images/background.png');
+    background-size: cover;
+    width: 88%;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 190px;
+    height: 40px;
+}
+
+.menu-list {
+    padding-top: 30px;
+    display: inline-flex;
+
+}
+
+.homeCleaner {
+    width: 500px;
+    height: 600px;
+    padding-left: 270px;
+}
+
+.card {
+    position: relative;
+
+}
+
+.vector,
+.vector1,
+.vector2 {
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.vector {
+    left: 620px;
+    top: 290px;
+    display: flex;
+    gap: 5px;
+}
+
+.vector1 {
+    top: 400px;
+    left: 250px;
+    display: flex;
+    gap: 5px;
+}
+
+.b {
+    font-size: 40px;
+}
+
+.portion {
+    width: 800px;
+}
+
+.font {
+    font-size: 50px;
+}
+
+.experience {
+    padding-top: 25px;
+}
+
+.experienceContainer {
+    width: 450px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(252, 251, 249);
+    justify-content: space-between;
+    padding: 2px 28px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgb(224, 224, 224);
+}
+
+ul,
+li {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section1 {
+    background-color: rgb(248, 247, 246);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding-left: 10px;
+}
+
+
+.image {
+    height: 40px;
+    width: 40px;
+    /*margin-top: 10px;*/
+    gap: 5px;
+}
+
+.establish {
+    color: gray;
+    margin-top: 100px;
+}
+
+.handwash {
+    height: 300px;
+    width: 350px;
+    border-radius: 15px 0px 15px 15px;
+}
+
+.mainImage {
+    position: relative;
+    margin-top: 200px;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(118, 211, 248);
+    border: 10px solid white;
+    position: absolute;
+    top: 200px;
+    left: 260px;
+    height: 200px;
+    width: 150px;
+    border-radius: 17px;
+}
+
+.box2 {
+    position: absolute;
+    height: 200px;
+    width: 250px;
+    background-color: rgb(206, 206, 197);
+    top: -200px;
+    left: 100px;
+    border-radius: 0px 15px 0px 0px;
+}
+
+.section2 {
+    display: flex;
+    gap: 250px;
+    margin-top: 80px;
+    padding-left: 300px;
+}
+
+.best {
+    font-size: 60px;
+    width: 600px;
+}
+
+.intro {
+    width: 380px;
+}
+
+.always {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.services {
+    display: flex;
+    gap: 100px;
+    margin-top: 80px;
+}
+
+.service {
+    width: 250px;
+    text-align: center;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.serviceImage {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 12px;
+}
+
+.section3 {
+    background-color: rgb(249, 255, 244);
+    padding: 80px;
+    margin-top: 80px;
+}
+
+.pastwork {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.p {
+    width: 450px;
+}
+
+.images {
+    height: 500px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.works {
+    display: flex;
+    gap: 35px;
+}
+
+.section4 {
+    margin-top: 30px;
+    padding-left: 45px;
+}
+
+.testimonies {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+small {
+    font-size: 16px;
+    color: gray;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.testimonials {
+    width: 230px;
+    background-color: rgb(250, 250, 249);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.testimonial {
+    width: 230px;
+}
+
+.text {
+    color: rgb(65, 60, 60);
+}
+
+.section5 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.play {
+    background-color: blue;
+    padding: 8px;
+    border-radius: 16px;
+    height: 8px;
+    position: absolute;
+    bottom: 1px;
+    left: 1.5px;
+}
+
+.playborder {
+    border: 1px solid rgba(43, 43, 175, 0.301);
+    padding: 8px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: relative;
+}
+
+.demoplay {
+    display: flex;
+}
+
+.demoplay p {
+    color: gray;
+}
+
+button {
+    padding: 25px;
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(59, 140, 207);
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.bookbutton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 600px;
+}
+
+h2 b {
+    font-size: 50px;
+    margin-top: 37px;
+}
+
+.book h2 {
+    width: 500px;
+    padding-bottom: 80px;
+}
+
+.book {
+    margin-left: 150px;
+}
+
+.book p {
+    width: 300px;
+}
+
+.section6 {
+    background-image: url('images/Vector (2).png');
+    height: 540px;
+    background-repeat: no-repeat;
+    background-position: 580px 0px !important;
+    margin-top: 80px;
+    background-color: rgb(248, 253, 251);
+}
+
+.section7 {
+    display: flex;
+    gap: 300px;
+    margin: 80px;
+}
+
+.info,
+li {
+    display: block;
+}
+
+li {
+    margin-top: 12px;
+}
+
+.footerlogo {
+    height: 150px;
+    width: 600px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    gap: 12px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.circle {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50px;
+    height: 2px;
+    position: relative;
+    margin-top: 2px;
+}
+
+.letter {
+    position: absolute;
+    bottom: -2px;
+    right: 2px;
+    color: white;
+}
+
+/*@media screen and (min-width:480px) {
+    body{
+        background-color: lightgreen;
+    }
+}*/
+
+@media screen and (max-width:480px) {
+
+    /*body {
+        overflow-x: hidden;
+        background-color: white;
+    }*/
+
+    .menu-list{
+        background-color: rgb(214, 75, 75);
+        height: 100vh;
+        width: 100%;
+        /*max-width: 450px;*/
+        position: fixed;
+        top: 0;
+        right: -450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+        transition: .3s ease;
+    }
+    
+    .menu-list.active{
+        right: 0;
+    }
+    
+    nav{
+        padding: 1rem;
+        display: flex;
+       background-color: black;
+    }
+    
+    .ham-menu{
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        position: relative;
+        
+    }
+    
+    .ham-menu span{
+        height: 5px;
+        width: 100%;
+        background-color: rgb(1, 1, 15);
+        border-radius: 25px;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+    
+    .ham-menu span:nth-child(1){
+        top: 25%;
+    }
+    .ham-menu span:nth-child(3){
+        top: 75%;
+    }
+    
+    .ham-menu.active span:nth-child(1){
+        top: 50%;
+        transform: translate(-50% -50%) rotate(45deg);
+    }
+    
+    .ham-menu.active span:nth-child(2){
+        opacity: 0;
+    }
+    .ham-menu.active span:nth-child(3){
+        top: 50%;
+        transform: translate(-50% -50%) rotate(-45deg);
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    ul,
+    li {
+        gap: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portion {
+        max-width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .nav {
+        max-width: 100%;
+    }
+
+    .background-image {
+        background-size: cover;
+        width: 100%;
+        height: 315px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .homeCleaner {
+        width: 250px;
+        height: 300px;
+        /*padding-left: 12px;*/
+        margin-right: 130px;
+        margin-top: 12px;
+    }
+
+    .image {
+        height: 25px;
+        width: 25px;
+        /*margin-top: 10px;*/
+        gap: 5px;
+    }
+
+    .vector {
+        left: 30px;
+        top: 130px;
+        display: flex;
+        gap: 2px;
+    }
+
+    .vector1 {
+        top: 170px;
+        left: 50px;
+        display: flex;
+        gap: 5px;
+    }
+
+    .b {
+        font-size: 30px;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 500px;
+        padding-left: 0px;
+        /*margin: 30px;*/
+    }
+
+    .handwash {
+        height: 300px;
+        width: 300px;
+        border-radius: 15px 0px 15px 15px;
+    }
+
+    .box {
+        left: 200px;
+        width: 130px;
+        height: 150px;
+    }
+
+    .box2 {
+        left: 100px;
+        width: 200px;
+    }
+
+    .intro {
+        width: 300px;
+    }
+
+
+    .always {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .best {
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p {
+        width: 300px;
+    }
+
+    h2 b {
+        font-size: 20px;
+        margin-top: 37px;
+    }
+
+    button {
+        padding: 10px;
+        width: 150px;
+        font-size: 20px;
+        margin-right: 150px;
+    }
+
+
+    .pastwork {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .works {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonies {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clients {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial {
+        padding-bottom: 80px;
+    }
+
+    .testimonials {
+        margin-bottom: 80px;
+    }
+
+    .bookbutton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .book h2 {
+        width: 400px;
+        padding-bottom: 80px;
+    }
+
+    .book {
+        margin-left: 50px;
+    }
+
+    .section7 {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 40px;
+    }
+
+    .footerlogo {
+        height: 75px;
+        width: 300px;
+    }
+
+    .section5 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .experienceContainer {
+        width: 300px;
+    }
+}
