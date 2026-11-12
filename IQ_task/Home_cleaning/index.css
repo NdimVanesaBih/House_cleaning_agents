@@ -612,15 +612,13 @@ footer {
         align-items: center;
         margin: 0px;
         padding: 0px;
-        margin-left: -190px;
+        /*margin-left: -190px;*/
     }
 
     .homeCleaner {
         width: 100%;
-        max-width: 250px;
         height: 300px;
-        padding: 0;
-        margin: 12px auto 0;
+        margin-left: 58px;
     }
 
     .image {
@@ -631,16 +629,17 @@ footer {
     }
 
     .vector {
-        left: auto;
-        right: 10px;
+        left: 220px;
         top: 130px;
+        width: 150px;
     }
 
     .vector1 {
-        top: 170px;
-        left: 180px;
+        top: 160px;
+        left: 10px;
         display: flex;
         gap: 5px;
+        width: 180px;
     }
 
     .b {
