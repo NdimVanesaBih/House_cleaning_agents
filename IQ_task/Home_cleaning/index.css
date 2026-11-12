@@ -1,11 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    overflow-x: hidden;
-    width: 100%;
+    box-sizing: border-box;
 }
 
 .background-image {
@@ -17,7 +13,6 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 35;
-    /*position: absolute;*/
 }
 
 .logo {
@@ -34,7 +29,7 @@ body {
 .homeCleaner {
     width: 500px;
     height: 600px;
-    padding-left: 270px;
+    margin-left: 265px;
 }
 
 .card {
@@ -52,10 +47,10 @@ body {
 }
 
 .vector {
-    left: 620px;
-    top: 290px;
+    left: 600px;
+    top: 273px;
     display: flex;
-    gap: 5px;
+    gap: 4px;
 }
 
 .vector1 {
@@ -105,7 +100,7 @@ li {
 
 ul,
 li {
-    display: flex;
+    display: flex;;
     gap: 24px;
     align-items: center;
     margin-bottom: 15px;
@@ -213,9 +208,8 @@ li {
 }
 
 .section3 {
-    background-color: rgb(249, 255, 244);
-    padding: 80px;
-    margin-top: 80px;
+    padding: 40px 16px;
+    margin-top: 40px;
 }
 
 .pastwork {
@@ -239,15 +233,98 @@ li {
     gap: 35px;
 }
 
-/*.section4 {
-    margin-top: 30px;
-    padding-left: 45px;
-}*/
+#slideContainer {
+    width: 100%;
+    max-width: 100%;
+    margin: 40px auto;
+    position: relative;
+    left: auto;
+    transform: none;
+    display: flex;
+}
+
+.sliderBtn {
+    position: absolute;
+    background-color: rgba(48, 5, 50, 0.5);
+    border: none;
+    color: white;
+   padding: 1rem;
+    top: calc(50% - 1rem - 27px);
+    z-index: 999;
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+}
+.sliderBtn:hover {
+    background-color: rgba(48, 5, 50, 1);
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.show {
+    display: block;
+    animation: fadein 1s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes fadein {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+  
+
+img {
+    max-width: 100%;
+    border-radius: 0.4rem 0.4rem 0 0;
+    display: block;
+    margin: auto;
+}
+
+.slides{
+    width: 450px;
+    height: 550px;
+}
+
+.section4 {
+    margin-top: 60px;
+}
 
 .testimonies {
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
+    gap: 450px;
+}
+
+.h3{
+    font-size: 50px;
+}
+
+.h3 b{
+    color: rgb(8, 181, 224);
+    font-size: 70px;
+}
+
+h4{
+    color: rgb(233, 108, 108);
+    font-size: 25px;
+    padding-bottom: 12px;
 }
 
 .client {
@@ -285,6 +362,7 @@ small {
 .section5 {
     padding-left: 100px;
     padding-right: 100px;
+    margin-top: 40px;
 }
 
 .play {
@@ -407,44 +485,37 @@ footer {
     color: white;
 }
 
-/*@media screen and (min-width:480px) {
-    body{
-        background-color: lightgreen;
-    }
-}*/
 
+
+
+/* Media Queries for Responsive Design */
 @media screen and (max-width:480px) {
 
     body{
         overflow-x: hidden;
     }
 
-    .menu-list{
-        background-color: rgb(214, 75, 75);
-        height: 300px;
-        width: 100%;
-        max-width: 250px;
+    .menu-list {
         position: fixed;
-        top: 0;
-        right: -450px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 3rem;
-        transition: .3s ease;
-        margin-top: 150px;
-        z-index: 1000;
+        top: 85px;
+        right: 15px;
+        width: 250px;
+        height: 280px;
+        margin: 0;
+        padding: 20px;
+        background-color: rgb(214, 75, 75);
+        display: none;
+        z-index: 1002;
     }
     
-    .menu-list.active{
-        right: 0;
+    .menu-list.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     nav{
-        padding: 1rem;
-        display: flex;
+       display: flex;
        background-color: black;
        right: 0;
     }
@@ -456,10 +527,19 @@ footer {
         position: relative;
         
     }
+
+    /*.testimonies h3 {
+        width: 100% !important;
+        font-size: 32px !important;
+    }*/
+    
+   /* .testimonies > div {
+        width: 100% !important;
+    }*/
     
     .ham-menu span{
         height: 4px;
-        width: 100%;
+        width: 50%;
         background-color: rgb(1, 1, 15);
         border-radius: 25px;
         position: absolute;
@@ -503,8 +583,17 @@ footer {
     }
 
     .portion {
-        max-width: 100%;
+        width: 100%;
         margin-bottom: 80px;
+    }
+
+    .font{
+        width: 270px;
+        font-size: 30px;
+    }
+
+    p{
+        width: 270px;
     }
 
     .nav {
@@ -523,14 +612,15 @@ footer {
         align-items: center;
         margin: 0px;
         padding: 0px;
+        margin-left: -190px;
     }
 
     .homeCleaner {
-        width: 250px;
+        width: 100%;
+        max-width: 250px;
         height: 300px;
-        padding-left: 9px;
-        margin-right: 130px;
-        margin-top: 12px;
+        padding: 0;
+        margin: 12px auto 0;
     }
 
     .image {
@@ -541,10 +631,9 @@ footer {
     }
 
     .vector {
-        left: 400px;
+        left: auto;
+        right: 10px;
         top: 130px;
-        display: flex;
-        gap: 2px;
     }
 
     .vector1 {
@@ -568,19 +657,22 @@ footer {
 
     .handwash {
         height: 300px;
-        width: 300px;
+        width: 230px;
         border-radius: 15px 0px 15px 15px;
+        margin-left: 10px;
     }
 
     .box {
-        left: 200px;
+        left: 150px;
         width: 130px;
         height: 150px;
     }
 
     .box2 {
         left: 100px;
-        width: 200px;
+        width: 140px;
+        height: 180px;
+        top: -178px;
     }
 
     .intro {
@@ -630,9 +722,31 @@ footer {
         flex-direction: column;
     }
 
+    .slides{
+        width: 250px;
+        height: 350px;
+    }
+
+    #slideContainer {
+        max-width: 100%;
+        margin-left: -40px;
+       
+    }
+
+    .h3{
+        font-size: 30px;
+        width: 100%;
+    }
+    
+    .h3 b{
+        color: rgb(8, 181, 224);
+        font-size: 50px;
+    }
+
     .testimonies {
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
 
     .clients {
@@ -649,31 +763,35 @@ footer {
     }
 
     .bookbutton {
+        width: 100%;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .book h2 {
-        width: 400px;
-        padding-bottom: 80px;
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 30px;
     }
 
     .book {
-        margin-left: 50px;
+        margin-left: 0;
+        width: 100%;
     }
 
     .section7 {
         display: flex;
         flex-direction: column;
-        gap: 40px;
-        margin: 40px;
+        gap: 30px;
+        margin: 40px 16px;
     }
-
+    
     .footerlogo {
-        height: 75px;
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
     }
 
     .section5 {
@@ -699,70 +817,18 @@ footer {
     }
 }
 
-#slideContainer {
-    width: 320px;
-    margin: auto;
-    /*position: absolute;*/
-    left: 50%;
-    /*top: -50%;*/
-    transform: translate(-50%, -50%);
-  }
-  .sliderBtn {
-    position: absolute;
-    background-color: rgba(48, 5, 50, 0.5);
-    border: none;
-    color: white;
-    padding: 1rem;
-    top: calc(50% - 1rem - 27px);
-    z-index: 999;
-    font-family: Nunito;
-    font-weight: 600;
-    font-size: 1.5rem;
-    cursor: pointer;
-    outline: none;
-  }
-  .sliderBtn:hover {
-    background-color: rgba(48, 5, 50, 1);
-  }
-  #prev {
-    left: 0;
-  }
-  #next {
-    right: 0;
-  }
-  .slide {
-    display: none;
-  }
-  .show {
-    display: block;
-    animation: fadein 1s ease-in-out 0s 1 normal forwards;
-  }
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-
- img {
-    max-width: 100%;
-    border-radius: 0.4rem 0.4rem 0 0;
-    display: block;
-    margin: auto;
-  }
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     #slideContainer {
-      width: 100%;
+    width: 100%;
+}
+    
+.sliderBtn {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+    
+.slide p {
+    padding: 0.5rem 0;
     }
-    .sliderBtn {
-      padding: 0.5rem;
-      font-size: 1rem;
-    }
-    .slide p {
-      padding: 0.5rem 0;
-    }
-  }
+}
   
