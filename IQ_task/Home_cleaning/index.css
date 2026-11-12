@@ -629,9 +629,10 @@ footer {
     }
 
     .vector {
-        left: 220px;
+        left: 180px;
         top: 130px;
         width: 150px;
+        background-color: brown;
     }
 
     .vector1 {
