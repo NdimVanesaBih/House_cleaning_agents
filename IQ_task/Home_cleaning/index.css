@@ -566,6 +566,7 @@ footer {
         padding-left: 0px;
         justify-content: center;
         align-items: center;
+        /*justify-content: center;*/
     }
 
     ul,
@@ -578,7 +579,7 @@ footer {
     .portion {
         width: 100%;
         margin-bottom: 80px;
-       padding: 20px;
+        padding: 20px;
     }
 
     .font{
