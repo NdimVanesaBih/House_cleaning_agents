@@ -500,12 +500,11 @@ footer {
     
     .menu-list {
         position: fixed;
-        top: 85px;
-        right: 15px;
-        width: 100%;
+        top: 150px;
+        right: 5px;
+        left: 5px;
+        width: 98%;
         height: 280px;
-        margin: 0;
-        padding: 20px;
         background-color: rgb(214, 75, 75);
         display: none;
         z-index: 1002;
@@ -517,13 +516,7 @@ footer {
         align-items: center;
     }
     
-    nav{
-       display: flex;
-       background-color: black;
-       right: 0;
-    }
-    
-    .ham-menu{
+        .ham-menu{
         height: 50px;
         width: 50px;
         margin-left: auto;
@@ -534,7 +527,7 @@ footer {
     .ham-menu span{
         height: 4px;
         width: 50%;
-        background-color: rgb(1, 1, 15);
+        background-color: rgb(41, 132, 236);
         border-radius: 25px;
         position: absolute;
         top: 50px;
@@ -566,7 +559,6 @@ footer {
     .section1 {
         display: flex;
         flex-direction: column;
-        /*padding: 0px;*/
         justify-content: center;
         align-items: center;
     }
@@ -580,29 +572,25 @@ footer {
 
     .portion {
         width: 100%;
-        margin-bottom: 80px;
-       padding: 0 2%;
+       margin-bottom: 80px; 
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-bottom: 100px;
     }
 
     .font{
-       /*  width: 270px; */
         font-size: 30px;
     }
 
-    p{
-       /*  width: 270px; */
-        /* padding-left: 20px; */
-    }
-
-    h4{
-       /* padding-left: 20px; */ 
-    }
 
     .nav {
         max-width: 100%;
-        margin-top: 30px;
         position: fixed;
-        z-index: 1;
+        z-index: 1000;
+        background: white;
+        background-color: transparent;
+        top: 15px;
     }
 
     .background-image {
@@ -625,7 +613,6 @@ footer {
     .image {
         height: 25px;
         width: 25px;
-        /*margin-top: 10px;*/
         gap: 5px;
     }
 
@@ -633,7 +620,6 @@ footer {
         left: 185px;
         top: 95px;
         width: 140px;
-        /*background-color: brown;*/
     }
 
     .vector1 {
@@ -651,9 +637,7 @@ footer {
     .section2 {
         display: flex;
         flex-direction: column;
-        padding-top: 500px;
-        padding-left: 0px;
-        padding: 0 20%;
+        gap: 35px;
 
     }
 
@@ -677,18 +661,19 @@ footer {
         top: -178px;
     }
 
-    /*.section3{
-        gap: 20px;
-    }*/
-
     .intro {
         width: 300px;
+    }
+
+    .section3{
+        background-color: rgb(229, 255, 246);
     }
 
 
     .always {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .best {
@@ -699,6 +684,17 @@ footer {
     .services {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .service{
+        background-color: rgb(196, 212, 212);
+        z-index: 50;
+        padding: 30px;
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
     }
 
     .p {
@@ -721,6 +717,7 @@ footer {
     .pastwork {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .works {
@@ -777,7 +774,6 @@ footer {
         max-width: 100%;
         display: flex;
         flex-direction: column;
-        /*align-items: flex-start;*/
     }
 
     .book h2 {
@@ -797,6 +793,7 @@ footer {
         flex-direction: column;
         gap: 30px;
         margin: 40px 16px;
+        align-items: center;
     }
     
     .footerlogo {
@@ -840,10 +837,6 @@ footer {
 
     #next{
         margin-left: 500px;
-    }
-        
-    .section3{
-        padding: 0 15%;
     }
 }
 
